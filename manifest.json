@@ -1,0 +1,24 @@
+{
+
+    "manifest_version": 2,
+    "name": "Leetcode Timer",
+    "version": "0.1",
+  
+    "description": "Adds timer functionality to leetcode.",
+  
+    "icons": {
+      "48": "icons/index.png"
+    },
+  
+    "content_scripts": [
+      {
+        "matches": ["*://*.leetcode.com/problems/*"],
+        "js": ["content.js"]
+      }
+    ],
+
+    "permissions": [
+      "tabs"
+    ] 
+  
+}
